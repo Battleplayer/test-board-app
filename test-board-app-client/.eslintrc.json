@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [ "react", "@typescript-eslint", "react-hooks" ],
+  "rules": {
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [ "error" ],
+    "react/jsx-filename-extension": [ "warn", { "extensions": [ ".tsx" ] } ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": [ "error" ],
+    "max-len": [ "warn", { "code": 140, "ignoreComments": true, "ignoreUrls": true } ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "prettier/prettier": [ "error", { "endOfLine": "auto" } ],
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
+
